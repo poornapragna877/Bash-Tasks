@@ -1,0 +1,14 @@
+#Bash Script for Pyramid Printing
+rows=7
+for((i=1; i<=rows; i++))
+do
+  for((j=1; j<=rows - i; j++)) #Loop for spaces
+  do
+    echo -n " "
+  done
+  for((j=1; j<=2*i - 1; j++)) #Loop for required "#" 
+  do
+    echo -n "#"
+  done
+  echo
+done
