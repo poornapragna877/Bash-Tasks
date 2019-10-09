@@ -1,0 +1,14 @@
+#Bash Scripting for Step type Pattern printing  
+rows=5
+for((i=1; i<=rows; i++))
+do
+  for((j=1; j<=rows - i; j++))  #for spaces
+  do
+    echo -n " "
+  done
+  for((j=1; j<=i; j++)) #for "#"s
+  do
+    echo -n "#"
+  done
+  echo
+done
